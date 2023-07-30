@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+
+html {
+    scroll-behavior: none;
+    background-color: rgb(255, 223, 247);
+}
+
+body::-webkit-scrollbar {
+    display:none;
+}
+#interactive {
+    display: flex;
+    justify-content: space-evenly;
+    transition: width 2s;
+    transition-timing-function: ease;
+    margin-top: 15vh;
+}
+
+.sections {
+    position: relative;
+    top: 30%;
+    display: inline-block;
+    user-select: none;  
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+    border-radius: 50px;
+    border: 5px solid rgba(241, 131, 182, .70);
+    transition: width 2s;
+    transition-timing-function: ease;
+    box-shadow: 10px 10px 0px 0px #333333;
+}
+
+.words {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40%;
+    display: block;
+    color: black;
+    font-family: 'Staatliches', sans-serif;    
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sections :hover {
+    color:rgb(241, 131, 182);
+}
+
+#interactive :hover {
+    width: 30%;
+}
+
+
+@keyframes enlarge {
+    0% {
+        width: 25%;
+    }
+
+    50% {
+        width: 26%;
+    }
+
+    100% {
+        width: 30%;
+    }
+
+
+}
+
+@keyframes loading {
+    0%, 100% {
+        opacity: 100%;
+    }
+
+    70% {
+        opacity: 0%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #interactive{
+        display: block;
+    }
+
+    .sections {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 30vh;
+        margin-bottom: 10px;
+        border: 7.5px solid rgba(241, 131, 182, .60)
+    }
+    
+    .sections :hover{
+        pointer-events: none;
+        
+    }
+
+    .sections :active {
+        color:rgb(241, 131, 182);
+    }
+
+    #interactive :hover{
+        pointer-events: none;
+        
+    }
+
+    #interactive :active {
+        filter: invert(3);
+    }
+
+}
