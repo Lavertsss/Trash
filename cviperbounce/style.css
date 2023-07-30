@@ -1,0 +1,33 @@
+.screen {
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(left 0px, top 0px);
+  }
+  20% {
+    transform: translate(left 1000px,top 0px);
+  }
+  40% {
+    transform: translate(100vh, 100vw);
+  }
+  60% {
+    transform: translate(0px, 1100px);
+  }
+  80% {
+    transform: translate(2400px, 0px);
+  }
+  60% {
+    transform: translate(0px, 1100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+img {
+  animation: bounce 5s infinite;
+  position: absolute1;
+}
