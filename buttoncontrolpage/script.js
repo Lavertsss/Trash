@@ -1,0 +1,1 @@
+alert("Fullscreen window for best viewing experience. Press ok to continue.")

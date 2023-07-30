@@ -1,0 +1,454 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #edc780;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+    animation: fadeIn 4s;
+    scroll-behavior: smooth;
+    overflow-y:hidden;
+}
+
+#title:active #titlebody{
+  animation: Shake 100ms linear infinite;
+}
+
+#page1:active  #page1body{
+  animation: Shake 100ms linear infinite;
+}
+
+#page2:active #page2body{
+  animation: Shake 100ms linear infinite;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+#title {
+  display: block;
+  text-align: justify;
+}
+
+#titlebody {
+  padding-top: 15%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 40px;
+  }
+
+  #spacing {
+    margin-top: 1000px;
+    margin-bottom: 1000px;
+  }
+
+  #spacing2 {
+    margin-top: 1000px;
+    margin-bottom: 1000px;
+  }
+  
+  #page1 {
+    display: block;
+  }
+
+  #page1body{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 50vh;
+  }
+
+  #page2 {
+    display: block;
+  }
+
+  #page2body{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 50vh;
+  }
+
+  .comma {
+    animation: fadeinout 2s linear infinite;
+  }
+
+  .titlefade {
+    animation: fadeIn 4s;
+  }
+
+  .p1 {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-size: 80px;
+  margin-top: 50px;
+  animation: Up-Down1 1s linear infinite;
+  }
+  .p2 {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-size: 80px;
+  margin-top: 50px;
+  animation: Up-Down2 1s linear infinite;
+  }
+  .p3 {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-size: 80px;
+  margin-top: 50px;
+  animation: Up-Down3 1s linear infinite;
+  }
+
+  .button {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-weight:600;
+    margin-top: 40vh;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: MoveUpDown 1s linear infinite;
+    width: 20px;
+    text-decoration: none;
+    opacity: 0.25;
+  }
+
+  .button:hover {
+    animation: Arrowswoop 500ms;
+    transition: opacity 2000ms;
+    opacity: 1;
+  }
+
+  .button:active {
+    animation: Arrowswoop 500ms;
+    transition: opacity 2000ms;
+    opacity: 1;
+  }
+
+  .button2 {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-weight:600;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: MoveUpDown 1s linear infinite;
+    width: 20px;
+    text-decoration: none;
+    opacity: 0.25;
+  }
+
+  .button2:hover {
+    transition: opacity 2000ms;
+    opacity: 1;
+    animation: Arrowswoop2 500ms;
+  }
+
+  .button2:active {
+    animation: Arrowswoop2 500ms;
+    transition: opacity 2000ms;
+    opacity: 1;
+  }
+
+  .button3 {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-weight:600;
+    animation: MoveUpDown 1s linear infinite;
+    width: 20px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.25;
+    margin-bottom: 15px;
+  }
+
+  .button3:hover {
+    animation: Arrowswoop 500ms;
+    transition: opacity 2000ms;
+    opacity: 1;
+  }
+
+  .button3:active {
+    animation: Arrowswoop 500ms;
+    transition: opacity 2000ms;
+    opacity: 1;
+  }
+
+  .button3:active > #page1 {
+    animation: lefttransition 2s linear infinite;
+  }
+
+  .button4 {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-weight:600;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: MoveUpDown 1s linear infinite;
+    width: 20px;
+    text-decoration: none;
+    opacity: 0.25;
+  }
+
+  .button4:hover {
+    transition: opacity 2000ms;
+    opacity: 1;
+    animation: Arrowswoop2 500ms;
+  }
+
+  .button4:active {
+    animation: Arrowswoop2 500ms;
+    transition: opacity 2000ms;
+    opacity: 1;
+  }
+
+  @keyframes lefttransition {
+    
+  }
+
+  @keyframes Arrowswoop {
+    100% {
+      transform: rotate(1080deg);
+    }
+  }
+
+  @keyframes Arrowswoop2 {
+    100% {
+      transform: rotate(1080deg);
+    }
+  }
+
+  @keyframes fadeinout {
+    0%, 100%{
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes Shake {
+    0%, 100% {
+      transform: translateY(0);
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateY(-2px);
+      transform: translateX(-2px);
+    }
+
+    40% {
+      transform: translateY(-2px);
+      transform: translateX(2px);
+    }
+
+    60% {
+      transform: translateY(2px);
+      transform: translateX(2px);
+    }
+
+    80% {
+      transform: translateY(2px);
+      transform: translateX(-2px);
+    }
+  }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  @keyframes Up-Down1 {
+    0%, 10% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-10px);
+    }
+
+    30% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes Up-Down2 {
+    0%, 10% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-10px);
+    }
+
+    40% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes Up-Down3 {
+    0%, 10% {
+      transform: translateY(0);
+    }
+    45% {
+      transform: translateY(-10px);
+    }
+
+    55% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @media (max-height: 1440px) {
+    #page1body {
+      margin-bottom: 450px;
+      margin-top: 350px;
+    }
+
+    .button2 {
+      margin-top: 100px;
+    }
+
+    #buttonid2 {
+      padding-top: 6px;
+    }
+  }
+
+  @media (max-height: 1080px) {
+    #page1body {
+      margin-bottom: 300px;
+    }
+
+    .button2 {
+      margin-bottom: 150px;
+      margin-top: 0px;
+    }
+
+    #buttonid2 {
+      padding-top: 30px;
+    }
+  }
+
+  @media (max-height: 850px) {
+    #page1body {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    .button2 {
+      margin-top: 50px;
+    }
+
+    .button3 {
+      margin-top: 200px;
+    }
+
+    #buttonid4 {
+      padding-top: 200px
+    }
+
+    .button4 {
+      margin-bottom: 100px;
+    }
+
+    #titlebody {
+      margin-bottom: 300px;
+      padding-top: 200px;
+    }
+
+    #page2body {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (max-height: 720px) {
+    .button {
+      margin-top: 225px;
+    }
+
+    .button3 {
+      margin-top: 175px;
+    }
+    
+  }
+
+
+  @media (max-height:670px) {
+  .button2 {
+    margin-bottom: 10px;
+  }
+
+    #page1body {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+  
