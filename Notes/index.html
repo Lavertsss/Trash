@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beginner Notes</title>
+  <link rel="icon" type="image/x-icon" href="https://github.com/Lavertsss/Images/blob/main/brainstorm-4500570-3735579.png?raw=true">
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PPLDB5GH8P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PPLDB5GH8P');
+</script>
+
+<body>
+
+  <div class="nav-menu">
+    <style>
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #080808;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      
+      
+      .sidenav a {
+        padding: 8px 6px 20px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 36px;
+        margin-left: 50px;
+        padding-right: 25px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+
+      </style>
+      </head>
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a rel="noopener" href="#starthtml">HTML</a>
+        <a rel="noopener" href="#startcss">CSS</a>
+        <a rel="noopener" href="#startjs">JS</a>
+        <a href="https://github.com/Lavertsss" target="_blank" class="github">Github</a>
+        <a href="https://github.com/Lavertsss/Portfolio" target="_blank" class="code">Code</a>
+        <a href="https://mindlessmuseum.com/" class="hub">My Works</a>
+      </div>
+
+      <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </div>
+
+  <div class="window-text">
+    <div class="container">
+
+      <section class="title">
+        <h1><b>Web Development Notes</b></h1>
+      </section>
+
+      <section class="warning">
+        <p><i>*WARNING:WEBSITE BEST VIEWED IN FULLSCREEN(Desktop Users)</i></p>
+        <p><i>*This page is constantly being updated</i></p>
+      </section>
+
+      <div class="logos">
+        <img class="htmlimage" src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png"
+          height="500px" width="500px">
+
+        <img class="cssimage" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+          height="500px" width="500px">
+
+        <img class="jsimage" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+         height="500px" width="500px">
+      </div>
+
+      <a id="starthtml"></a>
+      <section class="notes">
+        <h1>General HTML</h1>
+        <p>Element : An HTML Element is anything from the start tag to the end tag</p>
+        <p>Links: Links are associated with the < a > tag.</p>
+        <u>HTML Styles : </u>
+        <li>Color, Background-color : Both change the color of the element</li>
+        <li>font-family, font-size : both change the appearance of the text</li>
+        <li>text-align : determines horizontal placement of text.</li>
+      </section>
+
+      <section class="notes">
+        <h1>Format tags</h1>
+        <p><>b : Enboldens the text</p>
+        <p><>i : Formats the text into italics</p>
+        <p><>mark : Highlights the text</p>
+        <p><>del : creates text with a line in it</p>
+        <p><>ins : underlines text withi the text</p>
+      </section>
+
+      <a id="startcss"></a>
+      <section class="notes">
+        <h1>General CSS</h1>
+        <p>Margins : Margins are used to create space around elements, outside of any defined borders.</p>
+        <p>Outline : An outline is a line drawn outside the element's border.</p>
+        <p>Border-style : The border-style property specifies what kind of border to display.</p>
+        <p>Padding : Padding is used to create space around an element's content.</p>
+        <p>Content : The content of the box, where text and images appear.</p>
+        <p></p>
+      </section>
+      
+      <section class="notes">
+        <h1>CSS Height/Width</h1>
+        <p>auto : This is default. The browser calculates the height and width</p>
+        <p>length : Defines the height/width in px, cm, etc.</p>
+        <p>% : Defines the height/width in percent of the containing block.</p>
+        <p>initial : Sets the height/width to its default value</p>
+        <p>inherit : The height/width will be inherited from its parent value</p>
+      </section>
+      
+      <section class="notes">
+        <h1>Alignment</h1>
+        <p>Justify-content : The justify-content property aligns the flexible container's items</p> 
+        <p>when the items do not use all available space horizontally.</p>
+        <p>Align-item : Use the align-items property to align the items vertically.</p>
+      </section>
+
+      <a id="startjs"></a>
+      <section class="notes">
+        <h1>Console Commands</h1>
+        <p>* typeof : Used to determine the data type</p>
+        <p>* let/const/var : used for setting and declaring values</p>
+        <p>* alert() : Creates a notification in the top center of your screen</p>
+        <p>* prompt() : Asks a question wit a provided response area that triggers an
+          answer</p>
+        <p>* console.log() : prints whatevers is stated into the web dev console</p>
+      </section>
+
+      <section class="notes">
+        <h2>Data types</h2>
+        <p>* Numbers : Used for decumals and integers/floating point numbers</p>
+        <p>* String : Sequence of characters used for text</p>
+        <p>* Boolean : Logical type that can only be true or false</p>
+        <p>* Undefined : Sets a value as a variable but is not yet defined. ex:(let
+          milk;)</p>
+      </section>
+
+      <section class="notes">
+        <h2>Number types</h2>
+        <p>* Null : means empty value</p>
+        <p>* Symbol : value that is unique and cannot be changed</p>
+        <p>* BigInt : Larger integers than the Number type can hold</p>
+        <p>* let : used to declare variable and can be changed later</p>
+        <p>* const : when defining a variable as a constant it can not be changed later</p>
+      </section>
+      <section class="notes"></section>
+    </div>
+  </div>
+
+</body>
+</html>

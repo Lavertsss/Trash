@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@media screen and (max-width: 16px){
+
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.logos {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+min-height: 50vh;
+margin-top: 25vh;
+}
+
+
+.nav-menu{
+  position: fixed;
+  z-index: 2;
+  background-color: black;
+  padding: 10px;
+  border-radius: 25px;
+  opacity: 0.80;
+}
+
+
+.warning {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 25vh;
+  min-height: 50vh;
+  font-size: 15px;
+  animation: color-change 1s infinite;
+}
+
+.title {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+  min-height: 100vh;
+  max-width:100%;
+  height: auto; 
+  font-size: xx-large;
+  animation: color-change 5s;
+}
+
+.notes{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+  min-height: 100vh;
+  opacity: 0.25; 
+  transition: ease-out 1s;
+  max-width: 100%;
+  height: auto;
+  font-size: 100%;
+}
+
+.htmlimage {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  transition: ease-out 1s;
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+  max-width: 100%;
+  height: auto;
+}
+
+.cssimage {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  transition: ease-out 1s;
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+  max-width: 100%;
+  height: auto;
+}
+
+.jsimage {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  transition: ease-out 1s;
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@keyframes color-change {
+  0% {color: rgb(0, 0, 0);}
+  25% {color: rgb(24, 24, 24)}
+  50% {color: rgb(58, 58, 58);}
+  75% {color: rgb(212, 212, 212)}
+  100% {color: rgb(255, 255, 255)}
+}
+
+.notes:hover {
+  transform: scale(1.25);
+  transition-duration: 1s;
+  opacity: 1;
+}
+
+.htmlimage:hover {
+  transform: scale(1.25);
+  transition-duration: 1s;
+}
+
+.cssimage:hover {
+  transform: scale(1.25);
+  transition-duration: 1s;
+}
+
+.jsimage:hover {
+  transform: scale(1.25);
+  transition-duration: 1s;
+}
+
+@media (hover: none) {
+  .notes:hover { transform: inherit; }
+}
+
+@media (hover: none) {
+  .htmlimage:hover { transform: inherit; }
+}
+
+@media (hover: none) {
+  .cssimage:hover { transform: inherit; }
+}
+
+@media (hover: none) {
+  .jsimage:hover { transform: inherit; }
+}
+
+@media  (max-width:1500px){
+  .notes {opacity: 1;
+    margin: 20px;
+    font-size: 20px;}
+  .title {  display: grid;
+    place-items: center;
+    align-content: center;
+    text-align: center;
+    min-height: 80vh;
+    margin-bottom: 0px;
+    max-width:100%;
+    height: auto;
+    font-size: xx-large;
+    animation: color-change 12s;
+  }
+
+  .htmlimage {margin-left: auto;
+    margin-right: auto;
+    margin: 100px;
+    margin-top: 0%;
+    border-radius: 100%;
+    transition: ease-out 1s;
+    margin-top: 100vh;
+    max-width: 100%;
+    height: auto;}
+
+  .cssimage {margin-left: auto;
+    margin-right: auto;
+    margin: 100px;
+    border-radius: 100%;
+    transition: ease-out 1s;
+    max-width: 100%;
+    height: auto;}
+
+  .jsimage {margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    border-radius: 100%;
+    transition: ease-out 1s;
+    max-width: 100%;
+    height: auto;}
+
+  .logos {min-height: 0vh;
+  margin: 0px;
+  height: auto;}
+  }
+
+a:hover {
+background-color: white;
+}
+
+
+
+/*.container {
+  overflow-y: scroll;
+  flex-basis: 100%;
+  max-height: 100vh;
+  scroll-snap-type: y mandatory;
+  transition-duration: 0.25s;
+}
+
+.wrapper {
+  display: flex;
+  
+}
+
+.notes {
+  scroll-snap-align: start;
+}
+
+#logos {
+  scroll-snap-align: start;
+  scroll-snap-align: end;
+}*/
