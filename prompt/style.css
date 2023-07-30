@@ -1,0 +1,30 @@
+.page{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 1px 0px #000, 1px 1px 1px #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+  font-size: larger;
+  letter-spacing: 0.75px;
+  word-spacing: 0.25px;
+}
+
+.background{
+  background-color: black;
+}
+
+.joke{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+.joke:hover{
+  background-image: linear-gradient(90deg, #000000 0%, #818181 49%, #ffffff 80%, #000000 100%);
+  animation:slidebg 10s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
