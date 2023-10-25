@@ -4,6 +4,11 @@
 
 }
 
+.window-text{
+  transform: rotateX(90deg);
+  transform: perspective(200px);
+}
+
 body{
   background-color: black;
   color: white;
