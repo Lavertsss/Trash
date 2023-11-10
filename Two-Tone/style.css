@@ -1,0 +1,126 @@
+html{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* PAGE LAYOUT */
+#page{
+    display: block;
+    text-align: center
+}
+
+#section1{
+    display: block;
+    min-width: 100vw;
+    min-height: 75vh;
+    background-color: white;
+    position: relative;
+}
+
+#section1::after{
+    content: '';
+    height: 125px;
+    width: 125px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0px;
+    left: 45%;
+    transform: rotate(45deg);
+    animation: bob1 2s ease-in-out infinite;
+}
+
+/* SECTION 1 */
+.title{
+    font-size: 10rem;
+    text-wrap: wrap;
+    animation: titlefade 2000ms;
+    -webkit-transition: all 2s cubic-bezier(0.7, 0.05, 0.62, 1.25);
+    transition: all 2s cubic-bezier(0.7, 0.05, 0.62, 1.25);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 7.5rem;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.title-description{
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 20%;
+}
+
+/* SECTION 2 */
+#section2{
+    background-color: black;
+    display: block;
+    min-width: 100vw;
+    min-height: 100vh;
+    color: white;
+}
+
+.title2{
+    font-size: 10rem;
+    text-wrap: wrap;
+    animation: titlefade2 2000ms 5s;
+    -webkit-transition: all 2s cubic-bezier(0.7, 0.05, 0.62, 1.25);
+    transition: all 2s cubic-bezier(0.7, 0.05, 0.62, 1.25);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 7.5rem;
+    width: 100vw;
+    max-width: 100vw;
+    
+}
+
+/* ANIMATIONS */
+@keyframes titlefade {
+    0% {transform: translateY(200px); opacity: 0%;}
+    30%{opacity: 10%}
+    100% {transform: translateY(0px); opacity: 100%;}
+}
+
+@keyframes titlefade2 {
+    0% {transform: translateX(200px); opacity: 0%;}
+    30%{opacity: 10%}
+    100% {transform: translateX(0px); opacity: 100%;}
+}
+
+@keyframes bob1 {
+    0%{transform: translateY(0px) rotate(45deg);}
+    50%{transform: translateY(10px) rotate(45deg);}
+    100%{transform: translateY(0px) rotate(45deg);}
+}
+
+/* MOBILE */
+@media only screen and (max-width:1280px) {
+    #section1::after {
+        height:100px;
+        width: 100px;
+    }
+    #section1:after{
+        left: 42.5%;
+    }
+
+    .title{
+        font-size: 3rem;
+        text-wrap: nowrap;
+    }
+
+    .title-description{
+        display: none;
+    }
+
+    .title2{
+        font-size: 3rem;
+        text-wrap: nowrap;
+    }
+}

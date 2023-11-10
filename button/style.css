@@ -1,0 +1,64 @@
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0px;
+    animation: fadein 1750ms ease-out;
+    margin: 5px;
+}
+
+#scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* TITLE */
+#title-wrapper {
+    position: relative;
+    display: block;
+    text-align: center;
+    animation: bob infinite ease 3s;
+}
+
+.title {
+font-weight: 600;
+font-size: 5rem;
+}
+
+/* SCROLL */
+#scroll-placer {
+    display: block;
+    text-align: center;
+}
+
+#scroll-wrapper {
+    position: relative;
+    display:inline-block;
+    margin-top: 7.5rem;
+    height: 250px;
+    overflow:scroll;
+    border: black 10px solid;
+    border-radius: 2rem;
+}
+
+#scroll-container {
+    display: block;
+}
+
+
+.scroll-item {
+    font-size: 2rem;
+}
+
+/* ANIMATIONS */
+@keyframes fadein {
+    0% {opacity: 0; transform:translateY(50%);}
+    75% {opacity: .50;}
+    100% {opacity: 1;}
+}
+
+@keyframes bob {
+    33% {transform: translateY(0.5rem);}
+    66% {transform: translateY(0.5rem);}
+    99% {transform: translateY(0rem);}
+    /* 75% {transform: translateY(-5%);}
+    100% {transform: translateY(0%);} */
+}
